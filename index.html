@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hackathon  Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+  <!-- nav bar  -->
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+    <div class="container-fluid">
+      <img src="images/download.png" alt="Logo" width="150" height="60" class="mx-3">
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars fs-3 text-dark"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll fs-5 fw-normal gap-2"
+          style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active " href="#">Book now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Our location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact us</a>
+          </li>
+        </ul>
+
+
+        <div class="d-flex me-5 gap-3">
+
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+            <path fill="#fff"
+              d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+            </path>
+            <path fill="#fff"
+              d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+            </path>
+            <path fill="#cfd8dc"
+              d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+            </path>
+            <path fill="#40c351"
+              d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+            </path>
+            <path fill="#fff" fill-rule="evenodd"
+              d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <svg class="mt-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+            viewBox="0,0,256,256">
+            <g fill="#339af0" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(5.12,5.12)">
+                <path
+                  d="M14,3.99023c-5.51133,0 -10,4.48867 -10,10v22c0,5.51133 4.48867,10 10,10h22c5.51133,0 10,-4.48867 10,-10v-22c0,-5.51133 -4.48867,-10 -10,-10zM18.00586,12.0332c0.628,0.027 1.20473,0.38083 1.55273,0.92383c0.396,0.618 1.01055,1.57712 1.81055,2.82813c0.73,1.141 0.78091,2.61469 0.12891,3.80469l-1.46484,2.08398c-0.396,0.564 -0.47498,1.28588 -0.20898,1.92188c0.414,0.99 1.21658,2.5115 2.64258,3.9375c1.426,1.426 2.9475,2.22858 3.9375,2.64258c0.636,0.266 1.35788,0.18702 1.92188,-0.20898l2.08398,-1.46484c1.19,-0.652 2.66369,-0.60009 3.80469,0.12891c1.251,0.8 2.21012,1.41455 2.82813,1.81055c0.543,0.348 0.89683,0.92473 0.92383,1.55273c0.154,3.564 -2.60716,5.00781 -3.41016,5.00781c-0.556,0 -7.2403,0.7597 -14.7793,-6.7793c-7.539,-7.539 -6.7793,-14.2233 -6.7793,-14.7793c0,-0.803 1.44381,-3.56416 5.00781,-3.41016z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </nav> 
+
+   <!-- section two  -->
+  <div class="container">
+    <div class="row mt-3 ">
+      <div class="col-md-12 sec2image">
+        <img class="img-fluid   d-inline block m-auto  rounded-top picture image" src="images/section one pic.jpg" alt=""
+          height="200px">
+      </div>
+    </div>
+  </div>
+  <!-- sectionthree  -->
+     <div class="main">
+    <div class="rowthree">
+      <div class="sec3box" id="section3-whats"><svg class="boxicon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+          height="50" viewBox="0 0 48 48">
+          <path fill="#fff"
+            d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+          </path>
+          <path fill="#fff"
+            d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+          </path>
+          <path fill="#cfd8dc"
+            d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+          </path>
+          <path fill="#40c351"
+            d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+          </path>
+          <path fill="#fff" fill-rule="evenodd"
+            d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+            clip-rule="evenodd"></path>
+        </svg> <br><br><br><br>
+        <p class="secthreepara"> Book via <br><b class="whatsapp">whats app</b></p>
+      </div>
+      <div class="sec3box" id="section3-call"><svg class="boxicon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+          height="50" viewBox="0,0,256,256">
+          <g fill="#339af0" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <g transform="scale(5.12,5.12)">
+              <path
+                d="M14,3.99023c-5.51133,0 -10,4.48867 -10,10v22c0,5.51133 4.48867,10 10,10h22c5.51133,0 10,-4.48867 10,-10v-22c0,-5.51133 -4.48867,-10 -10,-10zM18.00586,12.0332c0.628,0.027 1.20473,0.38083 1.55273,0.92383c0.396,0.618 1.01055,1.57712 1.81055,2.82813c0.73,1.141 0.78091,2.61469 0.12891,3.80469l-1.46484,2.08398c-0.396,0.564 -0.47498,1.28588 -0.20898,1.92188c0.414,0.99 1.21658,2.5115 2.64258,3.9375c1.426,1.426 2.9475,2.22858 3.9375,2.64258c0.636,0.266 1.35788,0.18702 1.92188,-0.20898l2.08398,-1.46484c1.19,-0.652 2.66369,-0.60009 3.80469,0.12891c1.251,0.8 2.21012,1.41455 2.82813,1.81055c0.543,0.348 0.89683,0.92473 0.92383,1.55273c0.154,3.564 -2.60716,5.00781 -3.41016,5.00781c-0.556,0 -7.2403,0.7597 -14.7793,-6.7793c-7.539,-7.539 -6.7793,-14.2233 -6.7793,-14.7793c0,-0.803 1.44381,-3.56416 5.00781,-3.41016z">
+              </path>
+            </g>
+          </g>
+        </svg> <br><br><br><br>
+        <p class="secthreepara"> Book via <br><b class="call">call</b>
+        <p>
+      </div>
+      <div class="sec3box" id="get"><img  width="51" height="56" src="https://playgress.infinityfreeapp.com/wp-content/uploads/2025/05/Tryyyy-rtyjhrtjtykmtyumtyu.svg" class="boxicon"  alt="">
+        <p class="secthreepara">Get instant <br><b class="back">Call Back</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- section three mobile devices  -->
+   <div class="sec3-mb">
+    <img src="images/mobile whats app.png" alt="" width="115px" height="120px">
+    <div id="mb-sec3-call" ><img src="images/mobile call.png" alt="" width="60px" height="60px" ></div>
+    <img src="images/mobile call back.png" alt="" width="115px" height="120px">
+    
+   </div>
+   <!-- section four -->
+   <div class="secfour">
+    <div class="side1">
+      <h3 class="choose">Why Choose</h3>
+      <h1 class="trust">Trust Report</h1>
+      <button class="ratingbtn px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff"
+          class="bi bi-star" viewBox="0 0 16 16">
+          <path
+            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-star"
+          viewBox="0 0 16 16">
+          <path
+            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-star"
+          viewBox="0 0 16 16">
+          <path
+            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-star"
+          viewBox="0 0 16 16">
+          <path
+            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+        </svg><br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-star-half"
+          viewBox="0 0 16 16">
+          <path
+            d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+        </svg></button>
+      <p class="ratingnum p-2 ">(83490 Ratings)</p>
+    </div>
+    <div class="side2">
+      <p>
+        <svg class="one" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="red"
+          class="bi bi-currency-exchange" viewBox="0 0 16 16">
+          <path
+            d="M0 5a5 5 0 0 0 4.027 4.905 6.5 6.5 0 0 1 .544-2.073C3.695 7.536 3.132 6.864 3 5.91h-.5v-.426h.466V5.05q-.001-.07.004-.135H2.5v-.427h.511C3.236 3.24 4.213 2.5 5.681 2.5c.316 0 .59.031.819.085v.733a3.5 3.5 0 0 0-.815-.082c-.919 0-1.538.466-1.734 1.252h1.917v.427h-1.98q-.004.07-.003.147v.422h1.983v.427H3.93c.118.602.468 1.03 1.005 1.229a6.5 6.5 0 0 1 4.97-3.113A5.002 5.002 0 0 0 0 5m16 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0m-7.75 1.322c.069.835.746 1.485 1.964 1.562V14h.54v-.62c1.259-.086 1.996-.74 1.996-1.69 0-.865-.563-1.31-1.57-1.54l-.426-.1V8.374c.54.06.884.347.966.745h.948c-.07-.804-.779-1.433-1.914-1.502V7h-.54v.629c-1.076.103-1.808.732-1.808 1.622 0 .787.544 1.288 1.45 1.493l.358.085v1.78c-.554-.08-.92-.376-1.003-.787zm1.96-1.895c-.532-.12-.82-.364-.82-.732 0-.41.311-.719.824-.809v1.54h-.005zm.622 1.044c.645.145.943.38.943.796 0 .474-.37.8-1.02.86v-1.674z" />
+        </svg>  <span class="guaranteed mt-1">Lowest Price Guarenteed</span>
+      </p>
+      <p><svg class="one " xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green"
+          class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </svg>100% Certified Labs</p>
+      <p class="support"><svg class="one" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange"
+          class="bi bi-person-hearts" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M11.5 1.246c.832-.855 2.913.642 0 2.566-2.913-1.924-.832-3.421 0-2.566M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4m13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276ZM15 2.165c.555-.57 1.942.428 0 1.711-1.942-1.283-.555-2.281 0-1.71Z" />
+        </svg>24/7 
+        <span class="customer"> Customer Support</span>
+      </p>
+    </div>
+  </div>
+  <!-- section four for mb  -->
+   <img src="images/Ban.png" class="img-fluid  m-auto sec4mob" width="350px"  alt="">-->
+     <!-- section five -->
+  <center>
+    <h1 class=" s5-heading">Health scaning and Imaging Test</h1>
+  </center>
+  <div class="secfive">
+
+
+    <div class="card1">
+      <div class="" style="width: 15rem;">
+        <div class="cardpic1"> <img src="images/health scan 1.jpg" class="card-img-top cardimages img-fluid" alt="..." height="100px" width="200px"></div>
+        <div class="card-body">
+
+          <p class="card-text">Ultrasound starting<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="CurrrentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </p>
+
+          $500
+        </div>
+      </div>
+    </div>
+
+    <div class="card1">
+      <div class="card" style="width: 15rem;">
+        <img src="images/health scan 2.png" class="card-img-top cardimages" alt="...">
+        <div class="card-body">
+
+          <p class="card-text">X-Ray starting<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="CurrrentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </p>
+          $500
+        </div>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="card" style="width: 15rem;">
+        <img src="images/health scan 3.png" class="card-img-top cardimages" alt="...">
+        <div class="card-body">
+
+          <p class="card-text">ECG starting <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="CurrrentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </p>
+          $500
+        </div>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="card" style="width: 15rem;" >
+        <img src="images/health scan 4.png" class="card-img-top cardimages" alt="..." height="130px" width="200px">
+        <div class="card-body">
+
+          <p class="card-text">Echo Starting <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="CurrrentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </p>
+          $500
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section five btn portion -->
+
+  <div class="My-btn4 ">
+    <button type="button" class="btn btn-primary">Book Now</button>
+    <button type="button" class="btn btn-primary">Book Now</button>
+    <button type="button" class="btn btn-primary">Book Now</button>
+    <button type="button" class="btn btn-primary">Book Now</button>
+  </div>
+
+
+  <!-- section five carosel for small devices -->
+  <div class="container mt-3 sm-carosel ">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-indicators indicate">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner
+      ">
+        <div class="carousel-item active ">
+          <div class="row  column-gap-1">
+
+
+            <div class="ultra box-sm"> <img src="images/health scan 1.jpg" class="pictureslide"
+                alt="">UltraSound Starting@ $500</div>
+            <div class="x-ray box-sm "><img src="images/health scan 2.png" class="pictureslide"
+                alt=""> X-RAY Starting@ $500</div>
+            <div class="ecg box-sm "><img src="images/health scan 3.png" class="pictureslide"
+                alt="">ECG <br>Starting@ $500</div>
+          </div>
+          <div> <button type="button" id="sm-btn" class="btn btn-primary mr-3">Book Now</button>
+            <button type="button" id="sm-btn" class="btn btn-primary mr-3">Book Now</button>
+            <button type="button" id="sm-btn" class="btn btn-primary mx-0">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row  column-gap-1">
+            <div class="x-ray box-sm "><img src="images/health scan 4.png" class="pictureslide"
+                alt=""> X-RAY Starting@ $500</div>
+            <div class="ecg box-sm"><img src="images/health scan 1.jpg" class="pictureslide"
+                alt="">ECG <br>Starting@ $500</div>
+
+            <div class="echo box-sm"><img src="images/health scan 3.png" class="pictureslide"
+                alt=""> Echoderming Starting@ $500</div>
+
+            <div> <button type="button" id="sm-btn" class="btn btn-primary mr-3">Book Now</button>
+              <button type="button" id="sm-btn" class="btn btn-primary mr-3">Book Now</button>
+              <button type="button" id="sm-btn" class="btn btn-primary mx-0">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="row  column-gap-1">
+            <div class="ecg box-sm "><img src="images/health scan 2.png" class="pictureslide"
+                alt="">ECG <br>Starting@ $500</div>
+
+            <div class="echo box-sm"><img src="images/health scan 1.jpg" class="pictureslide"
+                alt=""> Echoderming Starting@ $500</div>
+            <div class="ultra box-sm"> <img src="images/health scan 3.png" class="pictureslide"
+                alt="">UltraSound Starting@ $500</div>
+          </div>
+          <div> <button type="button" id="sm-btn" class="btn btn-primary mr-3">Book Now</button>
+            <button type="button" id="sm-btn" class="btn btn-primary mr-3">Book Now</button>
+            <button type="button" id="sm-btn" class="btn btn-primary mx-0">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row  column-gap-1">
+            <div class="x-ray box-sm "><img src="images/health scan 2.png" class="pictureslide"
+                alt=""> X-RAY Starting@ $500</div>
+            <div class="ecg box-sm"><img src="images/health scan 1.png" class="pictureslide"
+                alt="">ECG <br>Starting@ $500</div>
+
+            <div class="echo box-sm"><img src="images/health scan 4.jpg" class="pictureslide"
+                alt=""> Echoderming Starting@ $500</div>
+
+            <div> <button type="button" id="sm-btn" class="btn btn-primary mr-3">Book Now</button>
+              <button type="button" id="sm-btn" class="btn btn-primary mr-3">Book Now</button>
+              <button type="button" id="sm-btn" class="btn btn-primary mx-0">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="carousel-control-prev previous" type="button" data-bs-target="#carouselExample"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next nexty" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+   <!-- section Six -->
+  <center class="mt-5 sec6heading">
+    <h1>Our service <span class="location">Locations</span></h1>
+  </center>
+  <main class="six">
+    <div class="sectionsix  d-flex justify-content-between mt-5">
+      <div class="sec6-box"><img src="images/delhi.png" width="130px" height="105px" alt="">
+        <h2 class="ml-4">Delhi<h2>
+      </div>
+      <div class="sec6-box"><img src="images/bangolre.png" width="130px" height="105px" alt="">
+        <h2> Bangolre</h2>
+      </div>
+      <div class="sec6-box"><img src="images/Gurugam.png" width="130px" height="105px" alt="">
+        <h2>Gurugum</h2>
+      </div>
+      <div class="sec6-box"><img src="images/Mumbai.png" width="130px" height="105px" alt="">
+        <h2>Mumbai</h2>
+      </div>
+      <div class="sec6-box"><img src="images/Hyderabad.png" width="130px" height="105px" alt="">
+        <h2>Hyderabad</h2>
+      </div>
+      <div class="sec6-box"><img src="images/Chennai.png" width="130px" height="105px" alt="">
+        <h2>Chennai</h2>
+      </div>
+      <div class="sec6-box"><img src="images/kolkatta.png" width="130px" height="105px" alt="">
+        <h2>Kolkata</h2>
+      </div>
+    </div>
+    </div>
+  </main>
+  <!-- Section six location carosel -->
+  
+   
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators sec6-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active" data-bs-interval="10000">
+        <div class="location-carousel">
+          <div class="sec6-box"><img src="images/delhi.png" width="55px" height="65px" alt="">
+            <h2 class="head">Delhi</h2>
+          </div>
+          <div class="sec6-box"><img src="images/bangolre.png" width="55px" height="65px" alt="">
+            <h2 class="head">Bangolre</h2>
+          </div>
+          <div class="sec6-box"><img src="images/Gurugam.png" width="55px" height="65px" alt="">
+            <h2 class="head">Gurugum</h2>
+          </div>
+          <div class="sec6-box"><img src="images/Mumbai.png" width="55px" height="65px" alt="">
+            <h2 class="head">Mumbai</h2>
+          </div>
+          <div class="sec6-box"><img src="images/Hyderabad.png" width="55px" height="65px" alt="">
+            <h2 class="head">Hyderabad</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="location-carousel">
+          <div class="sec6-box"><img src="images/Chennai.png" width="55px" height="65px" alt="">
+            <h2 class="head">Chennai</h2>
+          </div>
+          <div class="sec6-box"><img src="images/kolkatta.png" width="55px" height="65px" alt="">
+            <h2 class="head">Kolkata</h2>
+          </div>
+          <div class="sec6-box"><img src="images/delhi.png" width="55px" height="65px" alt="">
+            <h2 class="head ml-1">Delhi</h2>
+          </div>
+          <div class="sec6-box"><img src="images/bangolre.png" width="55px" height="65px" alt="">
+            <h2 class="head">Bangolre</h2>
+          </div>
+          <div class="sec6-box"><img src="images/Gurugam.png" width="55px" height="65px" alt="">
+            <h2 class="head">Gurugum</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="location-carousel">
+          <div class="sec6-box"><img src="images/Mumbai.png" width="55px" height="65px" alt="">
+            <h2 class="head">Mumbai</h2>
+          </div>
+          <div class="sec6-box"><img src="images/Hyderabad.png" width="55px" height="65px" alt="">
+            <h2 class="head">Hyderabad</h2>
+          </div>
+          <div class="sec6-box"><img src="images/delhi.png" width="55px" height="65px" alt="">
+            <h2 class="head ml-1">Delhi</h2>
+          </div>
+          <div class="sec6-box"><img src="images/bangolre.png" width="55px" height="65px" alt="">
+            <h2 class="head">Bangolre</h2>
+          </div>
+          <div class="sec6-box"><img src="images/Gurugam.png" width="55px" height="65px" alt="">
+            <h2 class="head">Gurugum</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item" data-bs-interval="1000">
+        <div class="location-carousel">
+          <div class="sec6-box"><img src="images/Mumbai.png" width="55px" height="65px" alt="">
+            <h2 class="head">Mumbai</h2>
+          </div>
+          <div class="sec6-box"><img src="images/Hyderabad.png" width="55px" height="65px" alt="">
+            <h2 class="head">Hyderabad</h2>
+          </div>
+          <div class="sec6-box"><img src="images/Chennai.png" width="55px" height="65px" alt="">
+            <h2 class="head">Chennai</h2>
+          </div>
+          <div class="sec6-box"><img src="images/kolkatta.png" width="55px" height="65px" alt="">
+            <h2 class="head">Kolkata</h2>
+          </div>
+          <div class="sec6-box"><img src="images/delhi.png" width="55px" height="65px" alt="">
+            <h2 class="head ml-1">Delhi</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Section seven CSS -->
+  <center>
+    <h1 class="sec7heading ">Our partner <span class="center">Center</span></h1>
+  </center>
+  <div class="sectionseven">
+
+    <!-- <div class="marquee mb-5"> -->
+    <marquee behavior="" direction=""">
+      <span><img src=" images/nuclear log.png" width="269px" height="80px" class="m-5" alt=""></span>
+      <span><img src="images/PC-Diagnostics log.png" width="185px" height="80px" class="m-5" alt=""></span>
+      <span><img src="images/salumbrity logo.jpg" width="251px" height="80px" class="m-5" alt=""></span>
+      <span><img src="images/Arthi logo.png" width="116px" height="80px" class="m-5" alt=""></span>
+      <span><img src="images/diagnocare logo.png" width="200px" height="200px" class="m-5" alt=""></span>
+      <span><img src="images/health square logo.png" width="94px" height="90px" class="m-5" alt=""></span>
+      <span><img src="images/Orbit logo.png" width="100px" height="100px" class="m-4" alt=""></span>
+       <span><img src=" images/nuclear log.png" width="269px" height="80px" class="m-5" alt=""></span>
+      <span><img src="images/PC-Diagnostics log.png" width="185px" height="80px" class="m-5" alt=""></span>
+      <span><img src="images/salumbrity logo.jpg" width="251px" height="80px" class="m-5" alt=""></span>
+      <span><img src="images/Arthi logo.png" width="116px" height="80px" class="m-5" alt=""></span>
+      <span><img src="images/diagnocare logo.png" width="200px" height="200px" class="m-5" alt=""></span>
+      <span><img src="images/health square logo.png" width="94px" height="90px" class="m-5" alt=""></span>
+      <span><img src="images/Orbit logo.png" width="100px" height="100px" class="m-4" alt=""></span>
+
+    </marquee>
+  </div>
+  </div>
+  <!-- section Seven small device -->
+  <div class="sm-sec7">
+    <span><img src="images/Arthi logo.png" width="90px" height="60px" class="arthi" alt=""></span>
+    <span><img src="images/Orbit logo.png" width="100px" height="90px" alt=""></span>
+    <span><img src="images/salumbrity logo.jpg" width="130px" height="55px" class="salub" alt=""></span>
+    <span><img src="images/PC-Diagnostics log.png" width="100px" height="70px" alt=""></span>
+    <span><img src=" images/diagnocare logo.png" width="90px" height="80px" alt=""></span>
+    <span><img src="images/nuclear log.png" width="130px" height="50px" alt=""></span>
+    <span><img src="images/health square logo.png" width="70px" height="65px" class="health" alt=""></span>
+
+  </div>
+  <!-- SECTION EIGHT -->
+
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators sec6-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    </div>
+    <div class="carousel-inner seceight">
+      <div class="carousel-item active eighty">
+        <div class="slide8">
+          <div class="eight-box"><img
+              src="https://tse2.mm.bing.net/th/id/OIP.Xm7ZK4q2n_Ej2vzYmLQGLgAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="">
+            <h6>JOHN SMITH</h6>
+            <button><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+              <i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i></button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit magni harum illum
+              voluptatibus ipsum placeat commodi, </p>
+          </div>
+          <div class="eight-box" id="b-8"><img
+              src="https://tse2.mm.bing.net/th/id/OIP.Xm7ZK4q2n_Ej2vzYmLQGLgAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="">
+            <h6>JOHN SMITH</h6>
+            <button><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+              <i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i></button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit magni harum illum
+              voluptatibus ipsum placeat commodi, </p>
+          </div>
+          <div class="eight-box"><img
+              src="https://tse2.mm.bing.net/th/id/OIP.Xm7ZK4q2n_Ej2vzYmLQGLgAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="">
+            <h6>JOHN SMITH</h6>
+            <button><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+              <i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i></button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit magni harum illum
+              voluptatibus ipsum placeat commodi, </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="slide8">
+          <div class="eight-box"><img
+              src="https://tse2.mm.bing.net/th/id/OIP.Xm7ZK4q2n_Ej2vzYmLQGLgAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="">
+            <h6>JOHN SMITH</h6>
+            <button><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+              <i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i></button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit magni harum illum
+              voluptatibus ipsum placeat commodi, </p>
+          </div>
+          <div class="eight-box" id="b-8"><img
+              src="https://tse2.mm.bing.net/th/id/OIP.Xm7ZK4q2n_Ej2vzYmLQGLgAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="">
+            <h6>JOHN SMITH</h6>
+            <button><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+              <i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i></button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit magni harum illum
+              voluptatibus ipsum placeat commodi, </p>
+          </div>
+          <div class="eight-box"><img
+              src="https://tse2.mm.bing.net/th/id/OIP.Xm7ZK4q2n_Ej2vzYmLQGLgAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="">
+            <h6>JOHN SMITH</h6>
+            <button><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+              <i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i></button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit magni harum illum
+              voluptatibus ipsum placeat commodi, </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="slide8">
+          <div class="eight-box"><img
+              src="https://tse2.mm.bing.net/th/id/OIP.Xm7ZK4q2n_Ej2vzYmLQGLgAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="">
+            <h6>JOHN SMITH</h6>
+            <button><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+              <i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i></button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit magni harum illum
+              voluptatibus ipsum placeat commodi, </p>
+          </div>
+          <div class="eight-box" id="b-8"><img
+              src="https://tse2.mm.bing.net/th/id/OIP.Xm7ZK4q2n_Ej2vzYmLQGLgAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="">
+            <h6>JOHN SMITH</h6>
+            <button><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+              <i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i></button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit magni harum illum
+              voluptatibus ipsum placeat commodi, </p>
+          </div>
+          <div class="eight-box"><img
+              src="https://tse2.mm.bing.net/th/id/OIP.Xm7ZK4q2n_Ej2vzYmLQGLgAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="">
+            <h6>JOHN SMITH</h6>
+            <button><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i><i
+                class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+              <i class="fa-sharp fa-solid fa-star fa-xs" style="color: #FFD43B;"></i></button>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit magni harum illum
+                voluptatibus ipsum placeat commodi, </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden ">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+    <footer>
+         <!-- footer -->
+  <footer>
+   
+
+  <!-- Top Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>NABL Accredited Labs<sup>*</sup></h1>
+        <p class="subtitle">Quality diagnostics you can rely on</p>
+        <p class="note">*Refer to Lab-specific NABL Scope for accredited parameters</p>
+      </div>
+      <div class="hero-badge">
+        <img src="https://playgress.infinityfreeapp.com/wp-content/uploads/2025/05/0-02-05-f171ffb223189ce9cdbd77ccb5819fa920a002b11583b0e37366045389bbdd2b_b1e1dc967c01a2e7.png" alt="Badge" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      
+      <!-- Logo & Description -->
+      <div class="footer-box">
+        <img src="images/true logo.png" alt="True Report Logo" class="logo">
+        <p>
+          Summarize your business so the visitor can learn about your offerings from any page on your website.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-box touch ">
+        <h4>Get In Touch</h4>
+        <p>123 Main Street<br>New York, NY 10001</p>
+        <p>Email: contact@mysite.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Hours: Mon-Fri 9:00AM - 5:00PM</p>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-box ml-5 " id="service">
+        <h4>Services</h4>
+        <ul>
+          <li>Service 1</li>
+          <li>Service 2</li>
+          <li>Service 3</li>
+          <li>Service 4</li>
+          <li>Service 5</li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-box mr-5" id="links"> 
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Book Now</a></li>
+          <li><a href="#">Our Locations</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© 2025 All Rights Reserved.</p>
+    </div>
+    
+  </footer>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html>
